@@ -1,0 +1,57 @@
+body {
+  font-family: 'lato',sans-serif;
+}
+.contact-info {
+  border: 1px solid black;
+  margin-left: 20px;
+  padding: 15px 0;
+}
+
+.contact-info img {
+  width: 150px;
+  height: auto;
+}
+.contact-info a, img, p {
+  margin-left: 20%;
+}
+
+main {
+  background-color: lightgray;
+  margin-top: 57px;
+  font-family: 'lato',sans-serif;
+}
+
+h2 {
+  text-align: center;
+}
+
+h5 {
+  text-align: center;
+}
+.community {
+  margin-left: 225px;
+}
+.test h2{
+  height: 1600px;
+  padding-bottom: 1000px;
+}
+
+.tech-info {
+  padding-left: 50px;
+}
+#fyform {
+  width: 500px;
+}
+footer{
+  background-color: lightgray;
+}
+
+@media only screen and (max-width: 1390px) {
+  .contact-info{
+    margin-left: 0px;
+
+  }
+  .contact-info a, img, p {
+    margin-left: 0;
+  }
+} 

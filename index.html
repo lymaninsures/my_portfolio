@@ -2,26 +2,141 @@
 <html>
   <head>
     <title>Lyman's Projects</title>
-    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   </head>
 
   <body>
     <header>
-      <nav>
-        <ul>
-          <li><a href="#">About Me</a></li>
-          <li><a href="#">Resume</a></li>
-          <li><a href="#">Projects</a></li>
-        </ul>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#">LC</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="./index.html">About Me <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./resume.html">Resume</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main>
-      <section>
         <!--fill this with contact info photo and linkedin. gitbhub links-->
-      </section>
-      <section>
-        <!--general info or separate container that will update with click of projects. Use anchors? links-->
-      </section>
+      <div class="row">
+        <div class="contact-info col-lg-2">
+          <img src="./Photo2.jpg" alt="my photo"/>
+          <p>Lyman Chao</p>
+          <p>San Francisco, CA</p>
+          <p>415-840-5699</p>
+          <a href = "mailto: lymanchao1@gmail.com">lymanchao1@gmail.com</a><br>
+          <a href = "github.com/lymaninsures">github.com/lymaninsures</a><br>
+          <a href = "https://www.linkedin.com/in/lyman-chao-31724b61/">linkedin.com/lymanchao</a>
+        </div>
+        <div class="col-lg-8">
+          <!--general info or separate container that will update with click of projects. Use anchors? links-->
+          <section>
+            <h2 class="test">About Me</h2>
+            <p>A San Francisco Native, I built a career in business development, customer service, sales, and managed multiple 
+              business units.  Through all my accomplishments, I find myself searching to build and create products.  Tech has 
+              been an interst of mine for many years but with growing my own business finding the time was difficult. In 2019, 
+              I found the opportunity to put together a project to learn how to develop a platforn for insurance agents.  I strive
+             to be effecient in my work.  Definition of crazy - "Doing the same thing over and over again expecting different results". 
+             The skills I've acquired in my career is good for Project/Program Management and Product Management. Fyform allowed me learn
+             how software is developed from an idea all the way to deployment. Being the non-technical co-founder to becoming the technical co-founder has
+             given me great appreciation for all the products that have been built before.</p>
+             <h5>Community Involvment</h5>
+             <div class="community">
+               <ul>
+                <li>Asian Real Estate Association of America National Membership Services Committee Chair</li>
+                <li>Asian Real Estate Association of America San Francisco Past President</li>
+                <li>Chinese Real Estate Association of America Past Board of Directors</li>
+                <li>San Francisco Unifed Lions Club Past Board of Directors</li>
+                <li>Peninsula Humane Society Pet Assisted Therapy Team</li>
+              </ul>
+             </div>
+          </section>
+          <section>
+            <h2 id="projects">Projects</h2>
+              <article>
+                <h3>Fyform</h3>
+                <div class="row">
+                  <div class="col-lg-2 tech-info">
+                    <a href="https://www.fyform.com" target="_blank">fyform.com</a>
+                    <h5>Tech Stack</h5>
+                    <ul>
+                      <li>Ruby on Rails</li>
+                      <li>Postgresql</li>
+                      <li>Git</li>
+                      <li>Appligent API</li>
+                      <li>Digital Ocean</li>
+                      <li>Vagrant</li>
+                      <li>Sidekiq</li>
+                      <li>Dropzone.js</li>
+                    </ul>
+                  </div>
+                  <div class="col">
+                    <img id="fyform" src="./fyform.png" alt="screenshot of site">
+                  </div>
+                </div>
+                <div>
+                  <h5>Background</h5>
+                  <p>Fyform is a SaaS insurance workflow tool that not only helps you fill out applications, 
+                    send applications direct to MGA, retrieves the correct forms for each line of business, 
+                    and organizes all relevant client documents, it also performs commission calculations on 
+                    every policy sold. This helps save massive amounts of time and effort usually spent on retrieving 
+                    old files and repeatedly filling out the same information, so the agent can  focus on selling.</p>
+                  <h5>Technology</h5>
+                  <p>Ruby on Rails  was chosen as the framework for Fyform because of the out-of-box features and 
+                    ]structure of the application. It allows me to quickly learn how to develop software. With 
+                    Rails, I can utilize ActiveStorage, ActiveJob, and ActiveMailer in combination with Sidekiq to 
+                    process jobs. To solve Fyform auto-filling pdf from online forms, we utilized Appeligent’s FDF 
+                    to PDF API.  Due to font issues with PDF forms, we switched from Heroku to Digital Ocean.  
+                    We are currently in the process of migrating back to Heroku because the font issue has been resolved.
+                    </p>
+                </div>
+              </article>
+              <article>
+                <h3>Tea Cozy</h3>
+                <div class="row">
+                  <div class="col-lg-2 tech-info">
+                    <a href="www.fyform.com" target="_blank">fyform.com</a>
+                    <h5>Tech Stack</h5>
+                    <ul>
+                      <li>HTML</li>
+                      <li>CSS</li>
+                      <li>Git</li>
+                    </ul>
+                  </div>
+                  <div class="col">
+                    <img id="fyform" src="./teacozy.png" alt="screenshot of site">
+                  </div>
+                </div>
+                <div>
+                  <h5>Background</h5>
+                  <p>Tea Cozy is a portfolio project to showcase html/css. This was a project from Codeacademy, 
+                    we were given a design mock up with stock images. How we coded the webpage was up to each 
+                    individual.</p>
+                  <h5>Technology</h5>
+                  <p>Since it was a static webpage, I used basic HTML and CSS create the webpage.</p>
+                </div>
+              </article>
+          </section>
+          
+
+        </div>
+      </div>
     </main>
+    <footer>
+
+    </footer>
   </body>
 </html>
